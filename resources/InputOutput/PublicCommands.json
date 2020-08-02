@@ -4,7 +4,7 @@
 	"InputOutput":{
 		"goodnight": ["Goodnight, {0.author.mention}"],
 		"scream": ["AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"],
-		"screm, bbb": [":screm:"],
+		"screm": [":screm:"],
 		"kiss": [":kissing_heart:"],
 		"arrest": [":police_car::police_car::police_car::police_car::police_car::police_car:"],
 		"f10": ["I'm calling the police, {0.author.mention}"],
