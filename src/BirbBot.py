@@ -90,7 +90,6 @@ async def on_message(message):
     msg = ""
 
     if message.content.startswith(birbBot.getCommandSymbol()):
-        print(birbBot.getPublicCommands().getCommands())
         cmd = message.content.lower().split()[0][len(birbBot.getCommandSymbol()):]  # get the first word and remove command symbol
 
         # commands retrieved from birbBot.[[IO_Object]].getCommands() are formatted as a list of tuples

@@ -108,6 +108,6 @@ class VoiceCommandReader:
         :param command:  the command the name was intended for
         :return:         the special response line
         """
-        for names in self.__specialResponses.getInputOutput().keys():
+        for names in self.__specialResponses.keys():
             if name.lower() in names:
-                return random.choice(self.__specialResponses.getInputOutput()[names][command])
+                return random.choice(self.__specialResponses[names][command])
