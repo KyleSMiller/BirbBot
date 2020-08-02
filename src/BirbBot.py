@@ -76,7 +76,7 @@ class BirbBot(discord.Client):
             IoDict = data["InputOutput"]
         return IoDict
 
-birbBotConfig = "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\BirbBotConfig.json"
+birbBotConfig = "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\BirbBotConfig.json"
 birbBot = BirbBot(birbBotConfig)
 
 @birbBot.event
@@ -86,47 +86,50 @@ async def on_message(message):
         return
 
     authorName = str(message.author.display_name)
-    authorID = "<@" + message.author.id + ">"
+    authorID = "<@" + str(message.author.id) + ">"
     msg = ""
 
     if message.content.startswith(birbBot.getCommandSymbol()):
+        print(birbBot.getPublicCommands().getCommands())
         cmd = message.content.lower().split()[0][len(birbBot.getCommandSymbol()):]  # get the first word and remove command symbol
 
-        if cmd in birbBot.getDmCommands().getCommands():
+        # commands retrieved from birbBot.[[IO_Object]].getCommands() are formatted as a list of tuples
+
+        if any(cmd in i for i in birbBot.getDmCommands().getCommands()):
             msg = birbBot.getDmCommands().getResponse(cmd)
             try:
-                await birbBot.send_message(message.author, msg.format(message))
+                await message.author.send(msg.format(message))
             except KeyError:  # if message contains text between {braces} that causes errors with .format()
-                await birbBot.send_message(message.author, msg)
+                await message.author.send(msg)
 
-        elif cmd in birbBot.getPublicCommands().getCommands():
+        elif any(cmd in i for i in birbBot.getPublicCommands().getCommands()):
             msg = birbBot.getPublicCommands().getResponse(cmd)
             try:
-                await birbBot.send_message(message.channel, msg.format(message))
+                await message.channel.send(msg.format(message))
             except KeyError:  # if message contains text between {braces} that causes errors with .format()
-                await birbBot.send_message(message.channel, msg)
+                await message.channel.send(msg)
 
         elif birbBot.isVoiceCommand(cmd):
             msg = birbBot.parseVoiceCommand(message, cmd)
             try:
-                await birbBot.send_message(message.channel, msg.format(message))
+                await message.channel.send(msg.format(message))
             except KeyError:  # if message contains text between {braces} that causes errors with .format()
-                await birbBot.send_message(message.channel, msg)
+                await message.channel.send(msg)
 
     if message.content in birbBot.getHiddenCommands().getCommands():
         msg = birbBot.getHiddenCommands().getResponse(message.content)
         try:
-            await birbBot.send_message(message.channel, msg.format(message))
+            await message.channel.send(msg.format(message))
         except KeyError:  # if message contains text between {braces} that causes errors with .format()
-            await birbBot.send_message(message.channel, msg)
+            await message.channel.send(msg)
 
     elif birbBot.isVoiceCommand(message.content):
         cmd = message.content.lower().split()[0]
         msg = birbBot.parseVoiceCommand(message, cmd)
         try:
-            await birbBot.send_message(message.channel, msg.format(message))
+            await message.channel.send(msg.format(message))
         except KeyError:  # if message contains text between {braces} that causes errors with .format()
-            await birbBot.send_message(message.channel, msg)
+            await message.channel.send(msg)
 
     # if message.content == "!reload":
     #     birbBot = BirbBot("C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\BirbBotConfig.json")

@@ -1,10 +1,10 @@
 {	
-	"usage": "for commands that are require the command symbol as a prefix",
+	"usage": "for commands that require the command symbol as a prefix",
 
 	"InputOutput":{
 		"goodnight": ["Goodnight, {0.author.mention}"],
 		"scream": ["AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"],
-		"screm": [":screm:"],
+		"screm, bbb": [":screm:"],
 		"kiss": [":kissing_heart:"],
 		"arrest": [":police_car::police_car::police_car::police_car::police_car::police_car:"],
 		"f10": ["I'm calling the police, {0.author.mention}"],

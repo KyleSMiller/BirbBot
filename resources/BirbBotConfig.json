@@ -7,19 +7,19 @@
 
 	"IO Paths": {
 
-		"Public Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\InputOutput\\PublicCommands.json",
-		"Hidden Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\InputOutput\\HiddenCommands.json",
-		"DM Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\InputOutput\\DMOutputCommands.json",
-		"Voice Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\InputOutput\\VoiceCommands.json",
-		"Special Responses" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\InputOutput\\SpecialResponses.json"
+		"Public Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\PublicCommands.json",
+		"Hidden Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\HiddenCommands.json",
+		"DM Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\DMOutputCommands.json",
+		"Voice Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\VoiceCommands.json",
+		"Special Responses" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\SpecialResponses.json"
 
 		},
 
 	"Voice Line Paths": {
 
-		"Agatha Archer" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\VoiceLines\\AgathaArcher.json",		
-		"Agatha MAA" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\VoiceLines\\AgathaMAA.json",
-		"Agatha Knight" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\VoiceLines\\AgathaKnight.json"
+		"Agatha Archer" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaArcher.json",		
+		"Agatha MAA" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaMAA.json",
+		"Agatha Knight" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaKnight.json"
 
 	}
 

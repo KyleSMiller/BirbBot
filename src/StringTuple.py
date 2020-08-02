@@ -22,4 +22,8 @@ class StringTuple:
         :return:
         """
         listKey = string.strip().split(self.__delimiter)
+        # remove excess spaces
+        for i in range(0, len(listKey)):
+            listKey[i] = listKey[i].strip()
+        
         return tuple(listKey)
