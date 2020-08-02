@@ -1,0 +1,266 @@
+{
+	"Character Names": ["agathaarcher"],
+	
+	"InputOutput": {
+		"z1, zz0":	[
+			"follow me!",
+			"here! Follow me!",
+			"come! Follow me!"
+			],
+		"z2, zz9":	[
+			"go! Go!",
+			"move forward!",
+			"keep going, we've got to move forward!",
+			"keep moving!",
+			"go! Move forward!",
+			"FORWARD!"
+			],
+		"z3, zz8":	[
+			"we've no choice, we must retreat!",
+			"we have to retreat!",
+			"retreat!",
+			"we've got to retreat!",
+			"we're finished! I'm finished!"
+			],
+		"z4, zz7, killthearchers":	[
+			"kill those archers!",
+			"we've got to kill those archers!",
+			"the archers are over there!",
+			"there! There! The Archers!",
+			"watch out for the bowmen!",
+			"arrows, from that way!",
+			"over there! The bowmen!",
+			"watch out for the archers!",
+			"they've got range, there!",
+			"they've got ranged!"
+			],
+		"z5, zz6":	[
+			"don't let those mongrels reach the villagers!",
+			"the Masons are coming from the hills! Protect the villagers!",
+			"hold the village! Defend the peasants!",
+			"defend the innocent! For Agatha and her people!",
+			"the Masons mean to take the village! Defend it!",
+			"don't let them reach our gates with that ram!",
+			"don't let the ram reach our gate!",
+			"stop that battering ram!",
+			"kill them, they're pushing the ram!",
+			"forward! Take out the battering ram!",
+			"they mean to batter our gates! Take out the battering ram!",
+			"kill the ones pushing the ram!",
+			"defend the king!",
+			"the king must not fall!",
+			"push them back! Don't let them reach the king!",
+			"hold the throne room! They're trying to kill the king!",
+			"rally to the king! Rally to the king!",
+			
+			"keep those dirty mongrels out!",
+			"keep them away from the valley!",
+			"they mean some foul deep! Keep them away!",
+			"stop the Masons from getting any closer!",
+			"don't let the Order any closer, they must be stopped!",
+			"defend the cistern! Don't let the Masons befoul our waters",
+			"stop the cart from entering the aquifer!",
+			"they mean to poison our people! Keep the cart away from our waters!",
+			"don't let them bring that foul cart into the cistern!",
+			"do not let that vile disease into the aquifer!",
+			"defend both sluice gate cranks! Hold back the waters!",
+			"keep the sluice gate closed! Defend the two cranks!",
+			"no! Don't let them release the befouled water! Protect both cranks!",
+			"keep the Masons away from the sluice gate cranks!",
+			"stop the Masons from releasing that foul water! Protect both sluice gate cranks!",
+			"defend the high born at all costs! They mean to murder them!",
+			"protect the royal family with your lives!",
+			"they know we guard the king's court! Protect them!",
+			"they keep coming! Defend the high-born at all costs!",
+			"hold fast and defend the royal family!",
+			
+			"turn the ballistas on their own barricade!",
+			"we're blocked at that barricade! Use the ballistas to tear it down!",
+			"we cannot progress until we take that wall down! Use the ballistas!",
+			"we must capture their ballistas and use them to penetrate the barricade!",
+			"free the slaves and stop their forges!",
+			"the slaves! Break their chains!",
+			"we can't leave the slaves to this fate! Free them!",
+			"we must free our people from these shackels!",
+			"free our peasant folk from their bondage!",
+			"raid the citadel and kill the false king!",
+			"kill Malric the traitor!",
+			"we aren't finished here until the usurper's head is on a pike!",
+			"we've almost finished this rebellion! Kill Malric!",
+			"to the citadel! Repay the lord of traitors with **death!**",
+			
+			"our ships are waiting for a signal! Light the fire!",
+			"we need our ships to blow that wall! Signal them with fire!",
+			"grab torches and get that signal fire burning!",
+			"find torches, light the fires! Our ships lie in wait!",
+			"our ships are in danger! Take out those trebuchets!",
+			"the enemy trebuchets need to be taken out, **now**!",
+			"don't let them sink our ships! Destroy their siege weapons!",
+			"their trebuchets are destroying our navy! Tear them down!",
+			"destroy their trebuchets! Our ships are sitting ducks out there!",
+			"we need to support our ships! Take over the enemy ballistas!",
+			"get up on the wall and use their ballistas against them!",
+			"we need to take out the enemy ships! Use the ballistas!",
+			"use the ballistas to help turn the tide of the sea battle!",
+			"there! On their wall! Haha! We'll use their own ballistas against them!",
+			
+
+			"burn the farm! Burn it all!",
+			"grab torches! Set fire to the farm!",
+			"find a torch! Burn the farm down!",
+			"torch the farm!",
+			"destory the farm with fire!",
+			"push that cart up to the gate!",
+			"get to the cart! Bring it to their walls!",
+			"keep that cart moving! We must reach the wall!",
+			"don't let them stop the cart! Keep it moving!",
+			"take the cart to their walls!",
+			
+			"go and bring back the Mason banner!",
+			"disgrace the Masons by capturing their banner!",
+			"capture the banner of those treasonous Masons!",
+			"capture the banner of those order of traitors!",
+			"bring back that black and red banner of treachery!",
+			"hurry! We must bring back our banner!",
+			"the traitors have taken our banner! Stop them!",
+			"the Masons have our colors! Bring back our banner!",
+			"free our banner from those cretinous Masons!"
+			],
+		"z6, zz5":	[
+			"hold your ground!",
+			"hold your ground men!",
+			"if you can't hold your ground, who will?",
+			"if you don't hold your ground, we're finished!",
+			"you've got to hold your ground!",
+			"hold your ground!",
+			"you must hold your ground!",
+			"you've got to hold your ground!"
+			],
+		"z7, zz4":	[
+			"to me! Defend me!",
+			"go quickly here! Defend me!",
+			"I need defence!",
+			"defend me!"
+			],
+		"z8, zz3":	[
+			"they just keep on coming!",
+			"more of them, incoming!",
+			"oh my god, there's more of them incoming!",
+			"th-they're coming... they're coming!",
+			"oh god, they've broken through!",
+			"we've got more incoming!",
+			"there's more of them! Incoming!"
+			],
+		"z9, zz2":	[
+			"they're right behind us!",
+			"in case you haven't noticed, they're right behind me!",
+			"behind us!",
+			"they're behind us, they're behind us!",
+			"they've gotten behind us, they've gotten behind us!",
+			"they're right behind us!",
+			"somehow they've gotten behind us!"
+			],
+		"z0, zz1":	[
+			"there's no one here!",
+			"there's nobody here!"
+			],
+		"x1, xx0": 	[
+			"of course!",
+			"yes!",
+			"**yes**"
+			],
+		"x2, xx9": 	[
+			"no!",
+			"of course not!",
+			"...no!",
+			"noooo!"
+			],
+		"x3, xx8":	[
+			"I need help!",
+			"help me!",
+			"heeeelllp!",
+			"help!"
+			],
+		"x4, xx7":	[
+			"go ahead! I've got your back!",
+			"I'm with you!",
+			"I'm right behind you!",
+			"I'll be right behind you!",
+			"I'm not leaving your side!",
+			"I won't leave your side!",
+			"I'll help you!",
+			"don't worry, I'm right here!",
+			"I've got your back!",
+			"don't worry, I've got your back!"
+			],
+		"x5, xx6, thank":	[
+			"thanks!",
+			"I am in your debt!",
+			"I owe you one!",
+			"thanks for your aid!",
+			"thanks, friend!",
+			"thank you, friend!",
+			"thank you!",
+			"you've done me a great kindness!",
+			"I am in your debt!",
+			"you are a true friend!",
+			"if we get out of this, your drink's on me!",
+			"I would have been lost without you!",
+			"he nearly had me, thank you!",
+			"I owe you my life!",
+			"if we get out of this, your drinks are on me!",
+			"if you ever need a favor, I am your man!"
+			],
+		"x6, xx5":	[
+			"you're welcome!",
+			"don't mention it!",
+			"any time, brother!",
+			"any time!"
+			],
+		"x7, xx4":	[
+			"well, it wasn't exactly on purpose!",
+			"it wasn't on purpose!",
+			"I'm so sorry, I don't know what came over me!",
+			"I don't know what came over me!",
+			"that wasn't me!",
+			"uhh... sorry!",
+			"sorry!"
+			],
+		"x8, xx3, taunt":	[
+			"well aren't you a cute one? Better not turn my back on you!",
+			"the battle's this way, gorgeous!",
+            		"oh my, aren't you handsome? Best not turn my back on you!",
+            		"if you're trying to kill me, you're going the wrong way!",
+			"if you're trying to fight me, you're going the wrong way!",
+            		"if you throw enough of them, maybe one of them will actually hit me!",
+            		"you sure got a lot of armor on!",
+            		"that's a pretty big sword! Are you compensating for something?",
+            		"don't look at me like that... it's creepy!",
+            		"you fight well, I shall name a daughter after you!",
+            		"come here and fight me like a man!",
+			"well aren't you handsome? Would you care for a dance?"
+			],
+		"x9, xx2, laugh":	[
+			"Ha ha **ha**!",
+			"Ha ha ha!",
+			"hehe... hahaha... oh...",
+			"hehe... ha ha ha ha!",
+			"ha! Ha ha ha... yes!",
+			"hehe... yes! ha ha ha!",
+			"i don't believe it, yes!",
+			"ho ho ho! Yes!"
+			],
+		"x0, xx1, respect":	[
+			"finally, a fair fight.",
+            		"you fought well, it'd be a shame to kill you.",
+            		"you fought well, I shall name my first born in your memory, ha-ha!",
+            		"you're a skilled fighter, but you're on the wrong side.",
+            		"finally, a worthy opponent.",
+            		"I see you're no stranger to the blade.",
+            		"you fight well, it's a shame you choose the wrong side.",
+            		"this has been fun, it's time to end it."
+			]
+	}
+
+
+}

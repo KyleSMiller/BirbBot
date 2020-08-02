@@ -1,0 +1,18 @@
+{	
+	"usage": "for commands that are require the command symbol as a prefix",
+
+	"InputOutput":{
+		"goodnight": ["Goodnight, {0.author.mention}"],
+		"scream": ["AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"],
+		"screm": [":screm:"],
+		"kiss": [":kissing_heart:"],
+		"arrest": [":police_car::police_car::police_car::police_car::police_car::police_car:"],
+		"f10": ["I'm calling the police, {0.author.mention}"],
+		"c": ["AAAARRRRRRRRRRRGGGGGGGGGGGGGGG"],
+		"quadfeint": ["QQQQ"],
+		"sheildjump": ["Reported for hacks"],
+		"flourish": ["*twirls*"],
+		"comeatme": ["GIVE ME A HUG!"],
+		"hug": [":hugging:"]
+		}
+}

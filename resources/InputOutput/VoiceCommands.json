@@ -1,0 +1,53 @@
+{
+
+	"usage": "The words listed in brackets can also be used to invoke the command listed in the voiceline file",
+	
+	"public": {
+		"z1": ["z1", "zz0", "follow", "followme"],
+		"z2": ["z2", "zz9", "forward"],
+		"z3": ["z3", "zz8", "retreat"],
+		"z4": ["z4", "zz7", "archers", "killarchers", "killthearchers"],
+		"z5": ["z5", "zz6", "objective", "gofortheobjective"],
+		"z6": ["z6", "zz5", "hold", "holdyourground"],
+		"z7": ["z7", "zz4", "defendme", "defend"],
+		"z8": ["z8", "zz3", "incoming"],
+		"z9": ["z9", "zz2", "behindus", "behindyou", "flank"],
+		"z0": ["z0", "zz1", "clear", "allclear", "empty"],
+
+		"x1": ["x1", "xx0", "yes"],
+		"x2": ["x2", "xx9", "no"],
+		"x3": ["x3", "xx8", "help"],
+		"x4": ["x4", "xx7", "gotyourback", "withyou"],
+		"x5": ["x5", "xx6", "thanks", "thank"],
+		"x6": ["x6", "xx5", "welcome", "you'rewelcome", "yourewelcome", "yourwelcome"],
+		"x7": ["x7", "xx4", "sorry", "apologies"],
+		"x8": ["x8", "xx3", "taunt"],
+		"x9": ["x9", "xx2", "laugh"],
+		"x0": ["x0", "xx1", "respect"]
+	},
+
+	"hidden":{
+		"z1": ["z1", "zz0"],
+		"z2": ["z2", "zz9"],
+		"z3": ["z3", "zz8"],
+		"z4": ["z4", "zz7"],
+		"z5": ["z5", "zz6"],
+		"z6": ["z6", "zz5"],
+		"z7": ["z7", "zz4"],
+		"z8": ["z8", "zz3"],
+		"z9": ["z9", "zz2"],
+		"z0": ["z0", "zz1"],
+
+		"x1": ["x1", "xx0"],
+		"x2": ["x2", "xx9"],
+		"x3": ["x3", "xx8"],
+		"x4": ["x4", "xx7"],
+		"x5": ["x5", "xx6"],
+		"x6": ["x6", "xx5"],
+		"x7": ["x7", "xx4"],
+		"x8": ["x8", "xx3"],
+		"x9": ["x9", "xx2"],
+		"x0": ["x0", "xx1"]	
+	}
+
+}

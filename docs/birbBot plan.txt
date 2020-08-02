@@ -1,0 +1,57 @@
+
+Interpreting messages to get command
+
+    if message starts with "!":
+
+        if word after "!" is a command:
+            store word as cmd
+
+            if second word is a recognized voice name:
+
+                store second word as voice
+
+                get all words typed after "voice" as name
+                pass cmd as keyword in library, voice as argument to check name method
+                if name is special response name
+                    return tuple (True, "<line>")
+                else:
+                    return tuple (False, "<line>"
+                store second element in returned tuple as msg
+
+                if first element in special response tuple is True:
+                    do nothing
+                else:
+                    pass cmd as keyword in library, voice name as argument to get line method
+                    get response from object stored in keyword index
+                    concatenate response to msg
+
+
+            if second word is not a recognized voice name or there is no second word:
+
+                pass cmd as keyword in library, "no voice" as argument to get line method
+                get response from object stored in keyword index
+                use response as msg
+                concatenate all words after voice as the name
+
+
+
+
+
+
+    def __formatPlayerList(self):
+        # TODO: Fix this garbage
+        # format the list of players to a 4-wide grid
+        if self.__playerList == []:
+            self.__displayPlayers = "\n" + noOneHere.getResponse()
+        else:
+            largestNameLength = 0
+            for i, j in enumerate(self.__playerList):
+
+                nameLength = len(j)
+                if nameLength > largestNameLength:
+                    largestNameLength = nameLength
+                formattedName = format(str(j), "^" + str(largestNameLength - nameLength))
+
+                if i % 4 == 0:
+                    self.__displayPlayers = self.__displayPlayers + "\n"
+                self.__displayPlayers = self.__displayPlayers + str(formattedName) + "  |  "

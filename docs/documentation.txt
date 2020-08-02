@@ -1,0 +1,79 @@
+
+<optional parameters>
+[required parameters]
+
+Command                    | Result
+--------------------------------------------------------
+!ms                        | Return info from all Moorland Skirmishers servers
+                           |
+!hello                     | Say hello
+!help                      | Directs you to documentation
+!taunt <class> <name>      | Say a taunt. If class specified, use class taunt. If name specified, direct insult at name
+!respect <class> <name>    | Say a respect line. If class is specified, use class taunt. If name is specified, direct insult at name
+!thank <class> <name>      | Say a thanks line. If class is specified, use class taunt. If name is specified, direct insult at name
+!x<number 0 - 9>           | Say a chivalry voice line
+!z<number 0 - 9>           | Say a chivalry tactical line
+
+Hidden Commands            | Result
+---------------------------------------------------------
+come hither                | Reply "come hither"
+what is Malric             | Respond "A dude!"
+!taunt BirbBot             | Respond with insult to sender
+!respect BirbBot           | Respond with thanks to sender
+!thank BirbBot             | Respond "your welcome, <user>"
+!thank <self>              | Respond "don't flatter yourself, <user>"
+!respect <self>            | Respond "I would, but the chat is too full of your ego for me to send a message right now, <user>"
+!taunt <self>              | Ask if user is okay
+!respect women             | Respond with video of respecting women
+!taunt women               | Refuse and call user trash
+!respect forbidden name    | Refuse
+!thank forbidden name      | Refuse
+x<0 - 9>                   | Say a chivalry voice line
+z<0 - 9>                   | Say a chivalry tactical line
+!kiss                      | Kiss the user
+!hug                       | Hug the user
+express love               | "I love you too"
+!f10                       | "I'm calling the police"
+!c                         | "AAARRRRGGGG"
+!shieldjump                | "Reported for hacks"
+!flourish                  | "*twirls*"
+!comeatme                  | "GIVE ME A HUG"
+!screm                     | ":screm:"
+!scream                    | "AAAAAAAAAAAAAAAAAAAAAAA"
+!arrest                    | ":police_car:"
+!goodnight                 | "Goodnight, <user>"
+good bot                   | "*happy birb noises*"
+we'regonnaneedthatgrain    | "Protect the farm!"
+                           -              -
+                           |             | "Oh no! Have you been feinted in Torn Banner's 2012 action slasher game,
+Express anger about feints | - Respond - | "Chivalry: Medieval Warfare"? Don't worry, you aren't alone, and help *is* out there
+                           |             | Please, take the time to talk to someone http://tornbanner.com/contact/"
+                           -              -
+
+
+Private Commands           | Result
+---------------------------------------------------------
+!shutdown <password>       | Remotely shut down BirbBot
+
+
+
+
+
+
+EXIT CODES:
+1 - Something went wrong while fetching server info
+2 - Something went wrong while processing voice line command
+9473 - remote shutdown command issued
+
+
+
+FEATURES TO ADD:
+i'm/I am <noun>            | 1/50 chance: Respond "Hi <noun>, I'm BirbBot"
+reactions
+roster creation + management
+
+
+
+
+
+BUG TRACKER:

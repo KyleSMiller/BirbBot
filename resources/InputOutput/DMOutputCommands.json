@@ -1,0 +1,11 @@
+{
+
+	"usage": "for commands that BirbBot will respond to in a direct message to the user",
+
+	"InputOutput": {
+		
+		"help" : ["WIP"]
+	
+	}
+
+}

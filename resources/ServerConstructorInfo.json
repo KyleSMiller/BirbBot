@@ -1,0 +1,46 @@
+{
+	"Server Constructors": [
+		{
+		"Name": "Moorland Skirmishers | Gracious Welcome",
+		"Game": "Chivalry: Medieval Warfare",
+		"IP": "66.151.138.224:3170",
+		"Query Port": "3172"
+		},
+		{
+		"Name": "Moorland Skirmishers | Map Testing",
+		"Game": "Chivalry: Medieval Warfare",
+		"IP": "66.151.138.224:3175",
+		"Query Port": "3177"
+		},
+		{
+		"Name": "Moorland Skirmishers \u274a The Moor Wild West",
+		"Game": "Mordhau",
+		"IP": "66.151.138.224:13301",
+		"Query Port": "13303"
+		},
+		{
+		"Name": "Moorland Skirmishers \u274a Gracious Welcome",
+		"Game": "Mordhau",
+		"IP": "66.151.138.224:13306",
+		"Query Port": "13308"
+		},
+		{
+		"Name": "Moorland Skirmishers \u274a Intimate Encounters",
+		"Game": "Mordhau",
+		"IP": "66.151.138.224:13326",
+		"Query Port": "13328"
+		},
+		{
+		"Name": "Moorland Skirmishers \u274a FFA Frenzy",
+		"Game": "Mordhau",
+		"IP": "147.135.36.211:7777",
+		"Query Port": "27015"
+		},
+		{
+		"Name": "Moorland Skirmishers \u274a Coordinated Carnage",
+		"Game": "Mordhau",
+		"IP": "147.135.36.211:7777",
+		"Query Port": "27016"
+		}
+	]
+}

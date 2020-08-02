@@ -1,0 +1,236 @@
+{
+	"Character Names": ["agathaknight"],	
+
+	"InputOutput": {
+		"z1, zz0":	[
+			"come hither",
+			"rally together, men!",
+			"reform the line!",
+			"to me!"
+			],
+		"z2, zz9":	[
+			"forward!",
+			"forward march!",
+			"onward brothers!",
+			"onward friends!"
+			],
+		"z3, zz8":	[
+			"fall back!",
+			"the light is fading!",
+			"our numbers diminish! Retreat!",
+			"save yourselves!"
+			],
+		"z4, zz7, killthearchers":	[
+			"those archers are cutting us down!",
+			"get those archers!",
+			"focus on the archers!",
+			"take out those archers!",
+			"mind those archers!",
+			"mind the archers!"
+			],
+		"z5, zz6":	[
+			"the Masons are coming from the hills! Protect the villagers!",
+			"don't let those mongrels reach the villagers!",
+			"the Masons mean to take the village! defend it!",
+			"hold the village! Defend the peasants!",
+			"stop the battering ram!",
+			"tally forth! Take out the battering ram!",
+			"kill them! They're pushing the ram!",
+			"they mean to batter our gates! Stop the ram!",
+			"don't let them reach our gate with that ram!",
+			"the king must not fall!",
+			"rally to the king!",
+			"push them back! Don't let them reach the king!",
+			"hold the throne room! They're trying to kill the king!",
+			"defend the king!",
+			
+			"they pursue some foul purpose, keep them at bay!",
+			"stop the Masons from getting any closer!",
+			"keep those dirty mongrels out!",
+			"keep them away from the valley!",
+			"don't let the order any closer! They must be stopped!",
+			"don't let that pile of disease into the aquifer!",
+			"they mean to poison our people! Keep the cart away from our waters!",
+			"stop the cart from entering the aquifer!",
+			"defend the cistern! Don't let the Masons befoul our waters!",
+			"don't let them bring that foul cart into our cistern!",
+			"keep the Masons away from the gate cranks!",
+			"keep the sluice gate closed! Defend both cranks!",
+			"defend both sluice gate cranks! Hold back the waters!",
+			"stop the Masons from releasing the foul waters! Protect both sluice gate cranks!",
+			"don't let them release the befouled water! Protect both cranks!",
+			"protect the royal family with your lives!",
+			"hold fast and defend the royal family!",
+			"they know we guard the king's court! Protect the king's men!",
+			"defend the high-born at all costs! They mean to murder them!",
+			"they keep coming! Defend the high-born with your lives!",
+			
+			"we're blocked at the barricade! Use their ballistas to tear it down!",
+			"we must capture their ballistas and use them to penetrate the barricade!",
+			"take their ballistas and use them to destroy the barricade!",
+			"turn their ballistas on their own barricade!",
+			"we cannot progress until we take that wall down! Use their ballistas!",
+			"the slaves! Break their chains!",
+			"we must free our people from their shackles!",
+			"we can't leave these slaves to this fate! Free them!",
+			"free the slaves and stop their forges!",
+			"free our peasant folk from their bondage!",
+			"to the citadel! Repay this lord of traitors with death!",
+			"we aren't finished here until the usurper's head is on a pike!",
+			"kill Malric the traitor!",
+			"we've almost crushed this rebellion! Kill Malric!",
+			"raid the citadel and kill the false king!",
+			
+			"grab torches and get that signal fire burning!",
+			"our ships are waiting for the signal! Light the fire!",
+			"we must light the signal fire and summon our ships!",
+			"find torches! Light the fires! Our ships lie in wait!",
+			"we need our ships to blast the wall! Signal them with fire!",
+			"our ships are in danger! Take out those trebuchets!",
+			"the trebuchets are destroying our navy! Tear them down!",
+			"the enemy trebuchets need to be taken out! **NOW!**",
+			"don't let them sink our ships! Destroy their siege weapons!",
+			"destroy the trebuchets! Our ships are sitting ducks out there!",
+			"we need to take out the enemy's ships! Use the ballistas!",
+			"we need to support our ships! Take over the enemy's ballistas!",
+			"there, on the wall! Use their ballistas against their ships!",
+			"get up on the wall and use their ballistas against them!",
+			
+			"torch the farm!",
+			"destroy the farm with fire!",
+			"grab torches! Set fire to the farm!",
+			"burn the farm! Burn it all!",
+			"find a torch! Burn the farm down!",
+			"keep the bomb cart moving! We must reach the wall!",
+			"get to the cart! Bring it to their walls!",
+			"take the bomb cart to the city gate!",
+			"don't let them stop the bomb cart! Keep it moving!",
+			"push the cart up to the gate!",
+			
+			"go and bring bring back the Mason banner!",
+			"disgrace the Masons by capturing their banner!",
+			"capture the treasonous Mason banner!",
+			"capture the banner of the order of traitors!",
+			"bring back the black and red banner of treachery!",
+			"the traitors have taken our banner! Stop them!",
+			"the Order have captured our banner! Retrieve it!",
+			"the Masons have our colors! Bring back our banner!",
+			"hurry! We must bring back our banner!",
+			"free our banner from the treacherous masons!",
+			
+			"come hither"
+			],
+		"z6, zz5":	[
+			"defend this line, lads!",
+			"hold your ground!",
+			"hooolllld yooouur grooooouuuunnnnnndddd!",
+			"at all costs, hold this position!",
+			"this position is our victory! Hold it!"
+			],
+		"z7, zz4":	[
+			"defend me, lads!",
+			"lend me your shields, lads!",
+			"lend me your shield, lads!"
+			],
+		"z8, zz3":	[
+			"here they come, lads!",
+			"here they come!",
+			"incoooommminngg!",
+			"they're coming!",
+			"they enemy is straight ahead!"
+			],
+		"z9, zz2":	[
+			"they're challenging us from the rear!",
+			"they've got our rears brothers!",
+			"they penetrate our rear flank!",
+			"they're coming up on our rear flank!"
+			],
+		"z0, zz1":	[
+			"there's nobody here!",
+			"they've ran!"
+			],
+		"x1, xx0": 	[
+			"right!",
+			"right.",
+			"yes.",
+			"yes, milord!",
+			"yes, my lord!"
+			],
+		"x2, xx9": 	[
+			"no!",
+			"no.",
+			"**no!**",
+			"no, milord!",
+			"no, my lord!"
+			],
+		"x3, xx8":	[
+			"help!",
+			"**help!**",
+			"heeeelllp!",
+			"help me! **help me!**",
+			"I need help!"
+			],
+		"x4, xx7":	[
+			"I've got your back, brother!",
+			"onward for the, brother!",
+			"together, for the light, brother!",
+			"fear not, brother, I am here!",
+			"I will be by your side brother!",
+			"I'm with you brother!",
+			"fear not, brother, for I am with you!"
+			],
+		"x5, xx6, thank":	[
+			"thank you, :b:rother!",
+            		"thank you, brother!",
+            		"thank you, brother!",
+            		"thank you, brother!",
+            		"thank you, brother!",
+            		"thank you, brother!",
+            		"thank you, brother!",
+           		"thank you, brother!",
+           		"thank you, brother!",
+           		"thank you, brother!"
+			],
+		"x6, xx5":	[
+			"you are most welcome.",
+			"you are most welcome!"
+			],
+		"x7, xx4":	[
+			"apologies.",
+			"my folly!",
+			"sorry!",
+			"sooorry!",
+			"whoops!",
+			"whoops! My folly, brother!"
+			],
+		"x8, xx3, taunt":
+			[
+			"oh, he is smart like my shoe!",
+            		"dost thou prate, rogue?",
+            		"dost thou jeer and t-taunt me in the teeth?",
+            		"zounds! I was never so bethumped with words!",
+            		"frightful armour does well to disguise peevish nature!",
+            		"dost thou insist to fill the world with vicious qualities?",
+            		"lay with dogs that are your chambermaids!",
+            		"your forces are made up of how much low peasantry?"
+			],
+		"x9, xx2, laugh":	[
+			"ha ha ha ha ha ha ha! ha... ha... oh boy...",
+			"hoho! Hohohoho!",
+			"hahaha ha ha",
+			"ha ha ha ha ha!"
+			],
+		"x0, xx1, respect":	[
+			"finally a fair fight.",
+            		"finally a fair match.",
+            		"you have fought well.",
+            		"good fight.",
+            		"you are a true warrior.",
+            		"nearly had me there.",
+            		"you are a fine warrior.",
+            		"ah, you are one who has matched my skill."
+			]
+	}
+
+
+}

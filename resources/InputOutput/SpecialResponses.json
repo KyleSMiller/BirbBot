@@ -1,0 +1,191 @@
+{
+
+	"usage": "Names that BirbBot should respond with a special message for rather than the generic 'name appended to message' format.",
+
+	"Special Names":{
+
+		"adolf hitler, adolf_hitler, adolfhitler, hitler": {
+			"x5": ["no"],
+			"x0": ["no"],
+			"x4": ["no"]
+		},
+		"joseph stalin, joseph_stalin, josephstalin, stalin": {
+			"x5": ["no"],
+			"x0": ["no"],
+			"x4": ["no"]
+		},
+		"pol pot, pol_pot, polpot": {
+			"x5": ["no"],
+			"x0": ["no"],
+			"x4": ["no"]
+		},
+		"mao zedong, mao_zedong, maozedong, mao": {
+			"x5": ["no"],
+			"x0": ["no"],
+			"x4": ["no"]
+		},
+		"ben shapiro, ben_shapiro, benshapiro": {
+			"x5": ["no"],
+			"x0": ["no"],
+			"x4": ["no"]
+		},
+		"donald trump, donald_trump, donaldtrump, trump, the_donald, the donald, god emperor trump, god-emperor trump": {
+			"x5": ["no"],
+			"x0": ["no"],
+			"x4": ["no"]
+		},
+		"jordan peterson, jordan_peterson, jordanpeterson": {
+			"x5": ["no"],
+			"x0": ["no"],
+			"x4": ["no"]
+		},
+		"richard spencer, richard_spencer, richardspencer": {
+			"x5": ["no"],
+			"x0": ["no"],
+			"x4": ["no"]
+		},
+		"nazis, nazi, nazi party, national socialists, national socialist party, 3rd riche, 3rd rich": {
+			"x5": ["no"],
+			"x0": ["no"],
+			"x4": ["no"]
+		},
+		"kkk, ku klux klan, klu klux klan, white nationalists, white supremacists": {
+			"x5": ["no"],
+			"x0": ["no"],
+			"x4": ["no"]
+		},
+
+
+		"women": {
+			"x5": ["https://www.youtube.com/watch?v=dfr4PrFxm0s"],
+			"x8": ["You're trash, {0.author.mention}. Show some respect"],
+			"x0": ["https://www.youtube.com/watch?v=dfr4PrFxm0s"]
+		},
+
+		"@everyone" : {
+
+			"x1": ["Surely you don't agree with ***everyone***, {0.author.mention}"],
+			"x2": ["Aren't you the contrarian, {0.author.mention}?"],
+			"x3": ["We appreciate it, {0.author.mention}, but we'd prefer if you did it in a less annoying way."],
+			"x4": ["We appreciate it, {0.author.mention}, but we'd prefer if you did it in a less annoying way"],
+			"x5": ["You could better show your thankfulness by writing us each personal thank you letters, don't you think, {0.author.mention}?"],
+			"x6": ["We appreciate it, {0.author.mention}, but we'd prefer if you did it in a less annoying way."],
+			"x7": ["You should apologize for trying that, {0.author.mention}"],
+			"x8": ["What if instead, everyone taunts you for thinking something this simple would work, {0.author.mention}?"],
+			"x9": ["Let's all laugh at you instead for thinking something that simple would work, {0.author.mention}"],
+			"x0": ["We appreciate the sentiment, but this might not be the best way to show it, {0.author.mention}"],
+
+			"z1": ["No one's going to want to follow you after that stunt, {0.author.mention}"],
+			"z2": ["No one's going to listen to you after that, {0.author.mention}"],
+			"z3": ["{0.author.mention}, you are a coward and a fool"],
+			"z4": ["Tempting, {0.author.mention}... I've not yet seen a better use for an @ everyone... But still, I think, no."],
+			"z5": ["You should know by now that no one plays the objective, {0.author.mention}"],
+			"z6": ["Nah, we're coming over there to beat your ass for trying that, {0.author.mention}"],
+			"z7": ["No one's going to stick their neck out for you after you tried that, {0.author.mention}"],
+			"z8": ["No need to yell about it, {0.author.mention}"],
+			"z9": ["No need to yell about it, {0.author.mention}"],
+			"z0": ["If there's no one here, why are you trying that, {0.author.mention}?"]
+	
+		},
+
+		"@here" : {
+
+			"x1": ["Surely you don't agree with ***everyone***, {0.author.mention}"],
+			"x2": ["Aren't you the contrarian, {0.author.mention}?"],
+			"x3": ["We appreciate it, {0.author.mention}, but we'd prefer if you did it in a less annoying way."],
+			"x4": ["We appreciate it, {0.author.mention}, but we'd prefer if you did it in a less annoying way"],
+			"x5": ["You could show your thankfulness by writing us each personal thank you letters, don't you think, {0.author.mention}?"],
+			"x6": ["We appreciate it, {0.author.mention}, but we'd prefer if you did it in a less annoying way."],
+			"x7": ["You should apologize for trying that, {0.author.mention}"],
+			"x8": ["What if instead, everyone taunts you for thinking something this simple would work, {0.author.mention}?"],
+			"x9": ["Let's all laugh at you instead for thinking something that simple would work, {0.author.mention}"],
+			"x0": ["We appreciate the sentiment, but this might not be the best way to show it, {0.author.mention}"],
+
+			"z1": ["No one's going to want to follow you after that stunt, {0.author.mention}"],
+			"z2": ["No one's going to listen to you after that, {0.author.mention}"],
+			"z3": ["{0.author.mention}, you are a coward and a fool"],
+			"z4": ["Tempting, {0.author.mention}... I've not yet seen a better use for an @ here... But still, I think no."],
+			"z5": ["You should know by now that no one plays the objective, {0.author.mention}"],
+			"z6": ["Nah, we're coming over there to beat your ass for trying that, {0.author.mention}"],
+			"z7": ["No one's going to stick their neck out for you after you tried that, {0.author.mention}"],
+			"z8": ["No need to yell about it, {0.author.mention}"],
+			"z9": ["No need to yell about it, {0.author.mention}"],
+			"z0": ["If there's no one here, why are you trying that, {0.author.mention}?"]
+	
+		},
+		
+		"birbbot, birb_bot, birb bot, bird bot, bird_bot, <@511403822418231296>": {
+			"x1": ["Indeed!"],
+			"x2": ["Why not?"],
+			"x3": ["I'll save you, {0.author.mention}!"],
+			"x4": ["Oooh, are we hugging, {0.author.mention}?"],
+			"x5": ["You are very welcome, {0.author.mention} :hugging:"],
+			"x6": ["Thanks, {0.author.mention}!"],
+			"x7": ["Apology accepted, {0.author.mention} :hugging:"],
+			"x8": ["BirbBot is very handsome and wonderful and not at all like that idiot {0.author.mention}",
+            			"Inciting self-abuse is not a joke, {0.author.mention}",
+            			"Fuck you, {0.author.mention}",
+            			"I work day and night for you, {0.author.mention}, and this is how you choose to repay me?",
+            			"Mother fucker . Catch these boots, {0.author.mention}",
+            			"{0.author.mention}, square up, bitch. *angry tweeting*",
+            			"{0.author.mention} >:(",
+            			"I'll whip your ass, {0.author.mention}",
+            			"{0.author.mention} *angry birb noises*",
+            			"This is going to HR, {0.author.mention}",
+            			"Ask not for whom the ban hammer comes, {0.author.mention}. It comes for thee."
+			],
+			"x9": ["Do not laugh at me, {0.author.mention} >:("],
+			"x0": ["Thank you, {0.author.mention} :hearts:"],
+
+			"z1": ["Where are we going?"],
+			"z2": ["I'd rather stay right here, thanks.", "make me."],
+			"z3": ["Bold of you to assume I can be hurt, {0.author.mention}. Send 'em at me.", 
+				"It is the enemy who should be retreating from us {0.author.mention}!", 
+				"Flee without me {0.author.mention}, I will peck out their eyeballs!",
+				"Flee? Nay, the enemy runs towards their own doom. Stand together, {0.author.mention}!"
+			],
+			"z4": ["With pleasure...",
+				"Already done",
+				"No need to ask me twice",
+				"Archers? Where? I'll peck out their eyeballs!"
+			],
+			"z5": ["I'd like to see you make me.",
+				"I'd love to, but I have to go back to playing Animal Crossing: New Leaf™ on my Nintendo 3DS.",
+				"Foolish is he who tells a birb what to do, {0.author.mention}",
+				"I'm kind of busy shield jumping out of the map, in case you hadn't noticed, {0.author.mention}",
+				"\"Play the objective?\" What does that mean, {0.author.mention}?"
+			],
+			"z6": ["Wasn't planning on moving, anyways."],
+			"z7": ["I'll protect you, {0.author.mention}!"],
+			"z8": ["Bring em at me! I'll peck out their eyes!"],
+			"z9": ["Behind me? How did that happen?"],
+			"z0": ["I'm here, is that not enough? :cry:"]
+			
+		},
+		"<<self>>": {
+			"x1": ["If need someone to be your yes-man, {0.author.mention}, just ask."],
+			"x2": ["Make up your mind, why don't you, {0.author.mention}?"],
+			"x3": ["Someone please help {0.author.mention}!"],
+			"x4": ["Well that makes one of you, {0.author.mention}"],
+			"x5": ["Don't flatter yourself, {0.author.mention}"],
+			"x6": ["That's a bit weird, innit {0.author.mention}?"],
+			"x7": ["Being at peace with yourself is important, {0.author.mention}. I hope you can come to forgive yourself."],
+			"x8": ["Are you feeling okay, {0.author.mention}?"],
+			"x9": ["Yes, yes, everyone laugh at {0.author.mention}! Ha ha ha!"],
+			"x0": ["I would, but the chat's too full of your ego for me to send a message right now, {0.author.mention}"],
+
+			"z1": ["Unless you're having an out-of-body experience, I don't understand why you said that, {0.author.mention}"],
+			"z2": ["Yes! Keep moving forward! I like the attitude, {0.author.mention}"],
+			"z3": ["Save yourself, {0.author.mention}!"],
+			"z4": ["Kill them all, {0.author.mention}!"],
+			"z5": ["Leading by example, {0.author.mention}, great job!"],
+			"z6": ["Hold fast, {0.author.mention}! Don't let them take you!"],
+			"z7": ["You're pretty cocky, I take it, {0.author.mention}?"],
+			"z8": ["Watch out, {0.author.mention}! They're coming for you!"],
+			"z9": ["Pay more attention next time, {0.author.mention}!"],
+			"z0": ["Clearly not, if you're talking to yourself, {0.author.mention}"]
+		} 
+
+	}
+
+}

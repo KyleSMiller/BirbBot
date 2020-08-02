@@ -1,0 +1,34 @@
+{	
+	"usage": "For commands that do not require the command symbol to be activated",
+
+	
+	"InputOutput":{
+		"come hither": ["come hither"],
+    		"good bot": ["*happy birb noises*"],
+    		"best bot": ["*happy birb noises*", "*happy birb noises*", "*happy birb noises*", "*happy birb noises*", "*happy birb noises*", "r"],
+    		"fantastic bot": ["*happy birb noises*"],
+    		"amazing bot": ["*happy birb noises*"],
+    		"great bot": ["*happy birb noises*"],
+    		"what is malric": ["a dude!"],
+    		"goodnight birbbot": ["goodnight, {0.author.mention}"],
+    		"goodnight birb bot": ["goodnight, {0.author.mention}"],
+    		"goodnight birb_bot": ["goodnight, {0.author.mention}"],
+    		"goodnight <@511403822418231296>" : ["goodnight, {0.author.mention}"],
+    		"goodnight, birbbot": ["goodnight, {0.author.mention}"],
+    		"goodnight, birb bot": ["goodnight, {0.author.mention}"],
+    		"goodnight, birb_bot": ["goodnight, {0.author.mention}"],
+    		"goodnight, <@511403822418231296>" : ["goodnight, {0.author.mention}"],
+    		"i love you birbbot": ["I love you too, {0.author.mention}"],
+    		"i love you birb bot": ["I love you too, {0.author.mention}"],
+   		"i love you birb_bot": ["I love you too, {0.author.mention}"],
+   		"i love you <@511403822418231296>": ["I love you too, {0.author.mention}"],
+   		"i love you, birbbot": ["I love you too, {0.author.mention}"],
+    		"i love you, birb bot": ["I love you too, {0.author.mention}"],
+    		"i love you, birb_bot": ["I love you too, {0.author.mention}"],
+    		"i love you, <@511403822418231296>": ["I love you too, {0.author.mention}"],
+    		"we'regonnaneedthatgrain": ["Protect the farm!"],
+    		"weregonnaneedthatgrain": ["Protect the farm!"],
+    		"we're gonna need that grain": ["Protect the farm!"],
+    		"were gonna need that grain": ["Protect the farm!"]
+		}
+}
