@@ -108,6 +108,11 @@ class VoiceCommandReader:
                              self.__message.content.split()[2:])
             self.__target = " ".join(self.__target).strip()  # change target from list of strings into single string
 
+            # check if command is targeting the person who sent the command
+            # when a user is @ mentioned, BirbBot reads it in the form: <@!333333333333333333>
+            # Chop off the <@! and > and compare the IDs
+            if self.__target[3:-1] == str(self.__authorID):
+                self.__target = "<<self>>"
 
     def __isSpecialResponseName(self, name):
         """
