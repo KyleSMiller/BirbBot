@@ -28,7 +28,8 @@ class BirbBot(discord.Client):
             self.__hiddenCommands = InputOutput(data["IO Paths"]["Hidden Commands"])
 
             self.__voiceCommands = VoiceCommandReader(data["Voice Line Paths"],
-                                                      data["IO Paths"]["Special Responses"])
+                                                      data["IO Paths"]["Special Responses"],
+                                                      data["IO Paths"]["Voice Commands"])
 
 
     def getToken(self):

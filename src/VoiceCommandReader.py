@@ -7,7 +7,7 @@ class VoiceCommandReader:
     """
     Class to handle the parsing of all voice commands
     """
-    def __init__(self, voicePaths, specialResponsePaths):
+    def __init__(self, voicePaths, specialResponsePaths, commandPaths):
         self.__message = None
         self.__author = None
         self.__authorID = None
@@ -21,6 +21,8 @@ class VoiceCommandReader:
 
         self.__specialResponses = self.__loadSpecialResponses(specialResponsePaths)
 
+        self.__commandPaths = commandPaths
+
     def getVoices(self):
         return self.__voices
 
@@ -28,7 +30,7 @@ class VoiceCommandReader:
         self.__message = message
         self.__author = message.author
         self.__authorID = message.author.id
-        self.__command = command
+        self.__command = self.__generalizeCommand(command, self.__commandPaths)
         msg = ""
         self.__extractVoiceAndTarget()
 
@@ -74,6 +76,23 @@ class VoiceCommandReader:
             for name in data["Special Names"].keys():
                 specialResponseDict[StringTuple(name).getTuple()] = data["Special Names"][name]
         return specialResponseDict
+
+    def __generalizeCommand(self, command, commandPath):
+        """
+        Map the command given to it's generalized name as specified in the VoiceCommands.json file
+        :return: String of the global command name
+        """
+        with open(commandPath) as generalizedCommandJson:
+            data = json.load(generalizedCommandJson)
+            for cmd in data["public"]:
+                if command in data["public"][cmd]:
+                    return cmd
+
+            for cmd in data["hidden"]:
+                if command in data["hidden"][cmd]:
+                    return cmd
+
+        return command
 
     def __extractVoiceAndTarget(self):
         """
