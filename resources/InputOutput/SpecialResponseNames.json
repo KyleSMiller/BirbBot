@@ -2,7 +2,7 @@
 
 	"usage": "The names listed in brackets can also be used to invoke the command listed in the SpecialResponseNames file",
 
-	"birbbot": ["birbbot", "birb bot", "birb_bot", "birdbot", "bird bot", "bird_bot", "<@511403822418231296>"],
+	"birbbot": ["birbbot", "birb bot", "birb_bot", "birdbot", "bird bot", "bird_bot", "<@!511403822418231296>, @Birbbot"],
 	
 	"adolf hitler": ["adolf hitler", "adolf_hitler", "adolfhitler", "hitler"],
 	"joseph stalin": ["joseph stalin", "joseph_stalin", "josephstalin", "stalin"],

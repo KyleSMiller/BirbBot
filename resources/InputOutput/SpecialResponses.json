@@ -114,7 +114,7 @@
 	
 		},
 		
-		"birbbot, birb_bot, birb bot, bird bot, bird_bot, <@511403822418231296>": {
+		"birbbot, birb_bot, birb bot, bird bot, bird_bot, <@!511403822418231296>": {
 			"x1": ["Indeed!"],
 			"x2": ["Why not?"],
 			"x3": ["I'll save you, {0.author.mention}!"],
