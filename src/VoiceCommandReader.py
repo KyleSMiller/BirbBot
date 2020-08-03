@@ -51,6 +51,10 @@ class VoiceCommandReader:
                         responseVoice.getResponse(self.__command).capitalize())
                 msg += line
 
+        # reset the target and voice
+        self.__target = ""
+        self.__voice = ""
+
         return msg
 
     def __loadVoiceLines(self, voicePaths):
