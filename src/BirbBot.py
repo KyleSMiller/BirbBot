@@ -18,7 +18,7 @@ class BirbBot(discord.Client):
         with open(configFilePath) as configFile:
             data = json.load(configFile)
 
-            self.__token = data["Token"]
+            self.__token = "NTE5MDI4NDk5MTgxNDY5Njk3.XATE9Q.JE1OGyaU-3Nu0IhNezB45X_xIZ0"
             self.__commandSymbol = data["Command Symbol"]
             self.__adminPassword = data["Admin Password"]
             self.__botDescription = data["Bot Description"]
