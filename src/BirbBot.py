@@ -17,7 +17,7 @@ class BirbBot(discord.Client):
         super().__init__()
         with open(configFilePath) as configFile:
             data = json.load(configFile)
-            # TODO: make this a relative path 
+            # TODO: make this a relative path
             tokenText = open("C:\\users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\botToken.txt")
             self.__token = tokenText.readline()
             self.__commandSymbol = data["Command Symbol"]
