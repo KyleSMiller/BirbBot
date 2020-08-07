@@ -3,17 +3,37 @@ from ServerInfo import *
 import json
 
 class ServerInfoCommandReader:
-    def __init__(self, serverDataFile):
+    def __init__(self, serverConstructorFile, serverDataFile):
+        self.__serverConstructorFile = serverConstructorFile
         self.__serverDataFile = serverDataFile
         self.__servers = []
+        self.__commands = []
+        self.__gatherCommands()
 
-    def getAllInfo(self):
+    def getAllInfo(self, cmd):
         """
         Retrieve the information from a set of servers
-        :return: String  The formatted information from all servers
+        :param:   the command invoked
+        :return:  String  The formatted information from all servers
         """
-        self.__readServerData()
+        self.__readServerData(cmd)
         return self.__formatServerDataSet()
+
+    def getCommands(self):
+        """
+        :return:  String List  The list of recognized server info commands
+        """
+        return self.__commands
+
+    def __gatherCommands(self):
+        """
+        Gather all the server info commands from the constructor file
+        """
+        self.__commands.clear()
+        with open(self.__serverConstructorFile) as serverConstructors:
+            data = json.load(serverConstructors)
+            for key, value in data.items():
+                self.__commands.append(key)
 
     def __formatServerDataSet(self):
         """
@@ -34,19 +54,22 @@ class ServerInfoCommandReader:
             msg += str(server) + "\n\n"
         return msg
 
-    def __readServerData(self):
+    def __readServerData(self, cmd):
         """
-        Read in the .json file of server data
-        :return:
+        Read in the .json file of server dat
+        :param:  The server group to read the data of
         """
+        self.__servers.clear()
         with open(self.__serverDataFile) as serverData:
             data = json.load(serverData)
-            for server in data["Server Data"]:
-                # create an appropriate ServerInfo object for the data.
-                # Default to ServerInfo class if game does not have it's own ServerInfo subclass
-                serverInfoObject = ServerInfo  # default ServerInfo type
-                for gameType in serverInfoTypes:
-                    if server["Game"] == gameType.getGameName():
-                        serverInfoObject = gameType
-                        break
-                self.__servers.append(serverInfoObject(server))
+            for serverGroup, servers in data.items():
+                if cmd == serverGroup:
+                    for server in servers:
+                        # create an appropriate ServerInfo object for the data.
+                        # Default to ServerInfo class if game does not have it's own ServerInfo subclass
+                        serverInfoObject = ServerInfo  # default ServerInfo type
+                        for gameType in serverInfoTypes:
+                            if server["Game"] == gameType.getGameName():
+                                serverInfoObject = gameType
+                                break
+                        self.__servers.append(serverInfoObject(server))
