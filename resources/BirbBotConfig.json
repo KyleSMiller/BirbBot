@@ -11,7 +11,8 @@
 		"Hidden Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\HiddenCommands.json",
 		"DM Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\DMOutputCommands.json",
 		"Voice Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\VoiceCommands.json",
-		"Special Responses" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\SpecialResponses.json"
+		"Special Responses" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\SpecialResponses.json",
+		"Server Constructors" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\ServerConstructorInfo.json"
 
 		},
 

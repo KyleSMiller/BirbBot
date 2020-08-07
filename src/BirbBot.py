@@ -9,6 +9,7 @@ import json
 
 from InputOutput import InputOutput
 from VoiceCommandReader import VoiceCommandReader
+from ServerInfoCommandReader import ServerInfoCommandReader
 
 logging.basicConfig(level=logging.INFO)
 
@@ -28,6 +29,7 @@ class BirbBot(discord.Client):
             self.__publicCommands = InputOutput(data["IO Paths"]["Public Commands"])
             self.__hiddenCommands = InputOutput(data["IO Paths"]["Hidden Commands"])
 
+            self.__serverCommands = ServerInfoCommandReader(data["IO Paths"]["Server Constructors"])
             self.__voiceCommands = VoiceCommandReader(data["Voice Line Paths"],
                                                       data["IO Paths"]["Special Responses"],
                                                       data["IO Paths"]["Voice Commands"])
@@ -48,14 +50,18 @@ class BirbBot(discord.Client):
     def getHiddenCommands(self):
         return self.__hiddenCommands
 
+    def getServerCommands(self):
+        return self.__serverCommands
+
     def getVoiceCommands(self):
         return self.__voiceCommands
 
-    def getSpecialNames(self):
-        return self.__specialNames
 
-    def getVoices(self):
-        return self.__voices
+    # def getSpecialNames(self):
+    #     return self.__specialNames
+    #
+    # def getVoices(self):
+    #     return self.__voices
 
     def parseVoiceCommand(self, message, command):
         return self.__voiceCommands.parseCommand(message, command)
@@ -66,10 +72,12 @@ class BirbBot(discord.Client):
                 return True
         return False
 
-        # for commandSynonyms in self.__voiceCommands.getVoiceCommands().values():
-        #     if cmd in commandSynonyms:
-        #         return True
-        # return False
+    def isServerCommand(self, cmd):
+        for command in self.__serverCommands.getCommands():
+            if cmd == command:
+                return True
+        return False
+
 
     def __loadIO(self, ioPath):
         IoDict = {}
@@ -112,6 +120,14 @@ async def on_message(message):
 
         elif birbBot.isVoiceCommand(cmd):
             msg = birbBot.parseVoiceCommand(message, cmd)
+            try:
+                await message.channel.send(msg.format(message))
+            except KeyError:  # if message contains text between {braces} that causes errors with .format()
+                await message.channel.send(msg)
+
+        elif birbBot.isServerCommand(cmd):
+            print("server command called")
+            msg = birbBot.getServerCommands().getAllInfo()
             try:
                 await message.channel.send(msg.format(message))
             except KeyError:  # if message contains text between {braces} that causes errors with .format()

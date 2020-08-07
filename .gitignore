@@ -1,4 +1,5 @@
 .idea/
 src/__pycache__/
+resources/__pycache__/
 resources/botToken.txt
 resources/temp/

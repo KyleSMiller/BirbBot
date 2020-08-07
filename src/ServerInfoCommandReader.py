@@ -6,6 +6,8 @@ class ServerInfoCommandReader:
     def __init__(self, serverDataFile):
         self.__serverDataFile = serverDataFile
         self.__servers = []
+        self.__commands = []
+        self.__readServerData()
 
     def getAllInfo(self):
         """
@@ -14,6 +16,9 @@ class ServerInfoCommandReader:
         """
         self.__readServerData()
         return self.__formatServerDataSet()
+
+    def getCommands(self):
+        return self.__commands
 
     def __formatServerDataSet(self):
         """
@@ -41,12 +46,14 @@ class ServerInfoCommandReader:
         """
         with open(self.__serverDataFile) as serverData:
             data = json.load(serverData)
-            for server in data["Server Data"]:
-                # create an appropriate ServerInfo object for the data.
-                # Default to ServerInfo class if game does not have it's own ServerInfo subclass
-                serverInfoObject = ServerInfo  # default ServerInfo type
-                for gameType in serverInfoTypes:
-                    if server["Game"] == gameType.getGameName():
-                        serverInfoObject = gameType
-                        break
-                self.__servers.append(serverInfoObject(server))
+            for key, value in data.items():
+                self.__commands.append(key)
+                for server in value:
+                    # create an appropriate ServerInfo object for the data.
+                    # Default to ServerInfo class if game does not have it's own ServerInfo subclass
+                    serverInfoObject = ServerInfo  # default ServerInfo type
+                    for gameType in serverInfoTypes:
+                        if server["Game"] == gameType.getGameName():
+                            serverInfoObject = gameType
+                            break
+                    self.__servers.append(serverInfoObject(server))
