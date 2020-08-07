@@ -3,22 +3,36 @@ from ServerInfo import *
 import json
 
 class ServerInfoCommandReader:
-    def __init__(self, serverDataFile):
+    def __init__(self, serverConstructorFile, serverDataFile):
+        self.__serverConstructorFile = serverConstructorFile
         self.__serverDataFile = serverDataFile
         self.__servers = []
         self.__commands = []
-        self.__readServerData()
+        self.__gatherCommands()
 
     def getAllInfo(self):
         """
         Retrieve the information from a set of servers
-        :return: String  The formatted information from all servers
+        :return:  String  The formatted information from all servers
         """
         self.__readServerData()
         return self.__formatServerDataSet()
 
     def getCommands(self):
+        """
+        :return:  String List  The list of recognized server info commands
+        """
         return self.__commands
+
+    def __gatherCommands(self):
+        """
+        Gather all the server info commands from the constructor file
+        """
+        self.__commands.clear()
+        with open(self.__serverConstructorFile) as serverConstructors:
+            data = json.load(serverConstructors)
+            for key, value in data.items():
+                self.__commands.append(key)
 
     def __formatServerDataSet(self):
         """
@@ -44,6 +58,7 @@ class ServerInfoCommandReader:
         Read in the .json file of server data
         :return:
         """
+        self.__servers.clear()
         with open(self.__serverDataFile) as serverData:
             data = json.load(serverData)
             for key, value in data.items():

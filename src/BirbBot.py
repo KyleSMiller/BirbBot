@@ -29,7 +29,8 @@ class BirbBot(discord.Client):
             self.__publicCommands = InputOutput(data["IO Paths"]["Public Commands"])
             self.__hiddenCommands = InputOutput(data["IO Paths"]["Hidden Commands"])
 
-            self.__serverCommands = ServerInfoCommandReader(data["IO Paths"]["Server Constructors"])
+            self.__serverCommands = ServerInfoCommandReader(data["IO Paths"]["Server Constructors"],
+                                                            data["IO Paths"]["Server Data"])
             self.__voiceCommands = VoiceCommandReader(data["Voice Line Paths"],
                                                       data["IO Paths"]["Special Responses"],
                                                       data["IO Paths"]["Voice Commands"])
@@ -126,7 +127,6 @@ async def on_message(message):
                 await message.channel.send(msg)
 
         elif birbBot.isServerCommand(cmd):
-            print("server command called")
             msg = birbBot.getServerCommands().getAllInfo()
             try:
                 await message.channel.send(msg.format(message))
