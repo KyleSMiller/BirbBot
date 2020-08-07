@@ -127,7 +127,7 @@ async def on_message(message):
                 await message.channel.send(msg)
 
         elif birbBot.isServerCommand(cmd):
-            msg = birbBot.getServerCommands().getAllInfo()
+            msg = birbBot.getServerCommands().getAllInfo(cmd)
             try:
                 await message.channel.send(msg.format(message))
             except KeyError:  # if message contains text between {braces} that causes errors with .format()

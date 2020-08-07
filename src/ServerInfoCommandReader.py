@@ -10,12 +10,13 @@ class ServerInfoCommandReader:
         self.__commands = []
         self.__gatherCommands()
 
-    def getAllInfo(self):
+    def getAllInfo(self, cmd):
         """
         Retrieve the information from a set of servers
+        :param:   the command invoked
         :return:  String  The formatted information from all servers
         """
-        self.__readServerData()
+        self.__readServerData(cmd)
         return self.__formatServerDataSet()
 
     def getCommands(self):
@@ -53,22 +54,22 @@ class ServerInfoCommandReader:
             msg += str(server) + "\n\n"
         return msg
 
-    def __readServerData(self):
+    def __readServerData(self, cmd):
         """
-        Read in the .json file of server data
-        :return:
+        Read in the .json file of server dat
+        :param:  The server group to read the data of
         """
         self.__servers.clear()
         with open(self.__serverDataFile) as serverData:
             data = json.load(serverData)
-            for key, value in data.items():
-                self.__commands.append(key)
-                for server in value:
-                    # create an appropriate ServerInfo object for the data.
-                    # Default to ServerInfo class if game does not have it's own ServerInfo subclass
-                    serverInfoObject = ServerInfo  # default ServerInfo type
-                    for gameType in serverInfoTypes:
-                        if server["Game"] == gameType.getGameName():
-                            serverInfoObject = gameType
-                            break
-                    self.__servers.append(serverInfoObject(server))
+            for serverGroup, servers in data.items():
+                if cmd == serverGroup:
+                    for server in servers:
+                        # create an appropriate ServerInfo object for the data.
+                        # Default to ServerInfo class if game does not have it's own ServerInfo subclass
+                        serverInfoObject = ServerInfo  # default ServerInfo type
+                        for gameType in serverInfoTypes:
+                            if server["Game"] == gameType.getGameName():
+                                serverInfoObject = gameType
+                                break
+                        self.__servers.append(serverInfoObject(server))
