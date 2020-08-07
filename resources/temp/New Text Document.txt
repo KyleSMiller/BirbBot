@@ -1,6 +1,0 @@
-				
-		"Agatha Vanguard" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\VoiceLines\\AgathaVanguard.json",
-		"Mason Archer" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\VoiceLines\\MasonArcher.json",
-		"Mason MAA" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\VoiceLines\\MasonMAA.json",
-		"Mason Vanguard" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\VoiceLines\\MasonVanguard.json",
-		"Mason Knight" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\VoiceLines\\MasonKnight.json"
