@@ -148,8 +148,10 @@ async def on_message(message):
         except KeyError:  # if message contains text between {braces} that causes errors with .format()
             await message.channel.send(msg)
 
-    # if message.content == "!reload":
-    #     birbBot = BirbBot("C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot\\resources\\BirbBotConfig.json")
+    if message.content == birbBot.getCommandSymbol() + "reload":
+        # reload all BirbBot commands
+        birbBot = None
+        birbBot = BirbBot(birbBotConfig)
 
 
 @birbBot.event

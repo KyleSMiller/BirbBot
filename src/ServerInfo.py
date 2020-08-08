@@ -1,4 +1,3 @@
-from resources.passwords import queryLoginUsername, queryLoginPassword
 from PlayerList import PlayerList
 
 import json
