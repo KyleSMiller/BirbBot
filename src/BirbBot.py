@@ -161,7 +161,7 @@ async def on_message(message):
         # reload all BirbBot commands
         if message.content == birbBot.getCommandSymbol() + "reload":
             birbBot = BirbBot(birbBotConfig)
-        
+
         # send messages through BirbBot
         if message.content.startswith(birbBot.getCommandSymbol() + "say"):
             targetChannelName = message.content.split(" ")[1]
@@ -173,6 +173,11 @@ async def on_message(message):
                         msg = " ".join(msgList)
                         targetChannel = birbBot.get_channel(int(data[targetChannelName]))
                         await targetChannel.send(msg)
+
+        # shutdown BirbBot remotely
+        if message.content == birbBot.getCommandSymbol() + "shutdown":
+            await message.author.send("shutting down")
+            exit(9473)
 
 
 @birbBot.event
