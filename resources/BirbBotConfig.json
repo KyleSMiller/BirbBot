@@ -4,6 +4,8 @@
 	"Command Symbol" : "!",
 	"Admin Password" : "NSD9473",
 	"Bot Description" : "I am bot for the Moorland Skirmishers discord server. I can recite voice lines, gather data on your favorite server, manage everyone's roles, and I love you very much *uwu*",
+	
+	"Known Channels" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\channels.json",
 
 	"IO Paths": {
 

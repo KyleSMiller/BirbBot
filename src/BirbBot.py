@@ -25,6 +25,9 @@ class BirbBot(discord.Client):
             self.__adminPassword = data["Admin Password"]
             self.__botDescription = data["Bot Description"]
 
+            self.__knownChannels = data["Known Channels"]
+
+            self.__adminCommands = data["IO Paths"]["Admin Commands"]
             self.__dmCommands = InputOutput(data["IO Paths"]["DM Commands"])
             self.__publicCommands = InputOutput(data["IO Paths"]["Public Commands"])
             self.__hiddenCommands = InputOutput(data["IO Paths"]["Hidden Commands"])
@@ -41,6 +44,9 @@ class BirbBot(discord.Client):
 
     def getCommandSymbol(self):
         return self.__commandSymbol
+
+    def getKnownChannels(self):
+        return self.__knownChannels
 
     def getDmCommands(self):
         return self.__dmCommands
@@ -148,9 +154,25 @@ async def on_message(message):
         except KeyError:  # if message contains text between {braces} that causes errors with .format()
             await message.channel.send(msg)
 
-    if message.content == birbBot.getCommandSymbol() + "reload":
+
+    #TODO: structure this better - this a a temporary implementation of admin commands
+    if str(message.author.id) == "296335824427941888":  # only Raysparks can use these commands
+
         # reload all BirbBot commands
-        birbBot = BirbBot(birbBotConfig)
+        if message.content == birbBot.getCommandSymbol() + "reload":
+            birbBot = BirbBot(birbBotConfig)
+        
+        # send messages through BirbBot
+        if message.content.startswith(birbBot.getCommandSymbol() + "say"):
+            targetChannelName = message.content.split(" ")[1]
+            with open(birbBot.getKnownChannels()) as channels:
+                data = json.load(channels)
+                for chnl in data.keys():
+                    if targetChannelName == chnl:
+                        msgList = message.content.split(" ")[2:]  # chop off the invocation and channel parts of the command
+                        msg = " ".join(msgList)
+                        targetChannel = birbBot.get_channel(int(data[targetChannelName]))
+                        await targetChannel.send(msg)
 
 
 @birbBot.event
