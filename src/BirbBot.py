@@ -150,7 +150,6 @@ async def on_message(message):
 
     if message.content == birbBot.getCommandSymbol() + "reload":
         # reload all BirbBot commands
-        birbBot = None
         birbBot = BirbBot(birbBotConfig)
 
 
