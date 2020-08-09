@@ -11,6 +11,9 @@ from InputOutput import InputOutput
 from VoiceCommandReader import VoiceCommandReader
 from ServerInfoCommandReader import ServerInfoCommandReader
 
+
+birbBotConfig = "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\BirbBotConfig.json"
+
 logging.basicConfig(level=logging.INFO)
 
 class BirbBot(discord.Client):
@@ -22,7 +25,7 @@ class BirbBot(discord.Client):
             tokenText = open("C:\\users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\botToken.txt")
             self.__token = tokenText.readline()
             self.__commandSymbol = data["Command Symbol"]
-            self.__adminPassword = data["Admin Password"]
+            self.__admins = data["Admins"]
             self.__botDescription = data["Bot Description"]
 
             self.__knownChannels = data["Known Channels"]
@@ -45,6 +48,9 @@ class BirbBot(discord.Client):
     def getCommandSymbol(self):
         return self.__commandSymbol
 
+    def getAdmins(self):
+        return self.__admins
+
     def getKnownChannels(self):
         return self.__knownChannels
 
@@ -63,12 +69,6 @@ class BirbBot(discord.Client):
     def getVoiceCommands(self):
         return self.__voiceCommands
 
-
-    # def getSpecialNames(self):
-    #     return self.__specialNames
-    #
-    # def getVoices(self):
-    #     return self.__voices
 
     def parseVoiceCommand(self, message, command):
         return self.__voiceCommands.parseCommand(message, command)
@@ -93,7 +93,6 @@ class BirbBot(discord.Client):
             IoDict = data["InputOutput"]
         return IoDict
 
-birbBotConfig = "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\BirbBotConfig.json"
 birbBot = BirbBot(birbBotConfig)
 
 @birbBot.event
@@ -154,9 +153,8 @@ async def on_message(message):
         except KeyError:  # if message contains text between {braces} that causes errors with .format()
             await message.channel.send(msg)
 
-
-    #TODO: structure this better - this a a temporary implementation of admin commands
-    if str(message.author.id) == "296335824427941888":  # only Raysparks can use these commands
+    # admin commands
+    if str(message.author.id) in birbBot.getAdmins():
 
         # reload all BirbBot commands
         if message.content == birbBot.getCommandSymbol() + "reload":
