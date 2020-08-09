@@ -1,0 +1,274 @@
+{
+	"Character Names": ["masonvanguard", "masonvan"],
+
+	"InputOutput": {
+		"z1, zz0":	[
+			"follow me!",
+			"follow me, this way!",
+			"come, this way!",
+			"fall in!",
+			"to me, this way!",
+			"come!",
+			"come with me!",
+			"this way!",
+			"this way, we go this way!"
+			],
+		"z2, zz9":	[
+			"forward!",
+			"keep on!",
+			"press on!",
+			"onward!",
+			"keep moving!",
+			"keep pushing forward!",
+			"push them back!",
+			"keep up the pressure!",
+			"don't stop now, keep going!"
+			],
+		"z3, zz8":	[
+			"retreat!",
+			"fall back!",
+			"it's no good! Fall back!",
+			"go back!",
+			"we must retreat!",
+			"fall back, regroup!",
+			"it's useless! Retreat!"
+			],
+		"z4, zz7, killthearchers":	[
+			"kill the archers!",
+			"slay the archers where they stand!",
+			"take out the archers!",
+			"the archers are cutting us down! Stop them!",
+			"the archers! Kill them!",
+			"take the fight to the archers!"
+			],
+		"z5, zz6":	[
+			"burn the village! Leave no one alive!",
+			"kill the peasants! Kill 'em all!",
+			"take no prisoners!",
+			"put those peasants out of their misery!",
+			"kill the loyalist scum!",
+			"take the village! For The Order!",
+			"move the ram to the gates!",
+			"keep that ram moving! Get it to the gate!",
+			"move the ram! Batter their gates!",
+			"don't stop! Keep the ram moving!",
+			"destroy their gate! Get the ram to the wall!",
+			"get to the throne room and kill the false king!",
+			"get to the throne room, kill the so called \"king\"!",
+			"a hundred gold pieces to the man who brings me the kings head!",
+			"victory is close! Kill the king!",
+			"kill the king in the name of The Order!",
+			"they're cowering in the throne room, get them! Kill the king!",
+			
+			"stay to the cart! Keep it moving!",
+			"bring the cart, forward!",
+			"keep 'em off the cart, keep it moving!",
+			"don't stop now, push the cart!",
+			"keep the cart rolling! Stay to the cart!",
+			"hurry, bring the cart in the cistern!",
+			"push the cart! Into the aquifer!",
+			"get the cart in the aquifer!",
+			"bring the bodies in the cistern! Befoul their water!",
+			"take the cart into the aquifer! Fill it with disease!",
+			"a little further! We must dump the bodies into their water supply!",
+			"get to the cranks! Throw open the sluice gates!",
+			"we need to open the sluice, get to the cranks!",
+			"work the cranks, release the befouled water!",
+			"fight your way to the sluice gate cranks!",
+			"turn those cranks! We need the sluice gates open!",
+			"get to the cranks! Release the soiled water!",
+			
+			"they're trying to destroy our barricade! Keep them off the ballistas!",
+			"they're using our ballistas! Keep them off the ballistas!",
+			"keep them off the ballistas!",
+			"they're freeing the slaves! Stop them!",
+			"defend the slaves! They're coming for the slaves!",
+			"keep the Agathians away from the slaves!",
+			"gaurd the slaves! Defend the forges!",
+			"hold them at the forges, defend the slaves!",
+			"defend our king! With your lives!",
+			"they're coming for Malric! Defend him!",
+			"stand your ground they're coming for Malric!",
+			"stop them! Keep them away from the king!",
+			"shield the king! Don't let them get to Malric!",
+			
+			"they're landed on our shores! Defend the pyre!",
+			"don't let them signal their ships! Defend the pyre!",
+			"they're trying to light a signal fire! Stop them!",
+			"stop them! They're trying to signal the ships!",
+			"they're trying to use our fire against us! Keep them off the fire!",
+			"defend the trebuchets! They mean to destroy them!",
+			"we need the trebuchets to fight their ships! Defend them!",
+			"they're destorying our trebuchets! Fight them off!",
+			"defend the trebuchets with your lives!",
+			"at all cost, defend the trebuchets!",
+			"our ships must win the sea battle! Hold the ballistas!",
+			"stop them! They're using our ballistas against us!",
+			"they're destorying our ships! Keep them off the ballistas!",
+			"keep those dogs off the ballistas! Defend the ships!",
+			
+			"defend our food supplies! Protect the farm!",
+			"keep them away from the torches, they're burning the farm!",
+			"we're gonna need that grain! Protect the farm!",
+			"they're burning the farm! Stop them!",
+			"don't let them get any closer! Stop that cart!",
+			"if that cart get to the gate we're finished! Stop them!",
+			"don't let them get that cart to our walls!",
+			"keep the Agathians off that cart, stop them!",
+			
+			"capture their banner, for The Order!",
+			"disgrace the Agathians! Capture their banner!",
+			"go forth and take their banner!",
+			"capture the Agathian flag!",
+			"bring back the Agathian colors!",
+			"take down their colors! This is Mason country!",
+			"they captured our banner! Bring it back!",
+			"return our banner, for The Order!",
+			"hurry, they have our flag! Get it back!",
+			"stop them! They've taken our banner!",
+			"they have our banner! They must be stopped!"
+			],
+		"z6, zz5":	[
+			"hold!",
+			"hold your ground!",
+			"halt! We fight here!",
+			"we hold them here!",
+			"here, stay here!",
+			"stay to this spot!",
+			"don't move!",
+			"hold them here!"
+			],
+		"z7, zz4":	[
+			"defend me!",
+			"cover me!",
+			"I need your shield!",
+			"get my back!",
+			"gaurd me!",
+			"to me! Protect me!",
+			"to me! Cover me!"
+			],
+		"z8, zz3":	[
+			"incoming!",
+			"here they come!",
+			"they're coming!",
+			"here come the Agathians!",
+			"they come! Fight!",
+			"they're coming! Fight!",
+			"here they come!",
+			"this is it! Here they come!"
+			],
+		"z9, zz2":	[
+			"behind us!",
+			"they flanked us!",
+			"about face! they flanked us!",
+			"they're behind you!",
+			"behind you!",
+			"they're coming up on our rear!",
+			"turn around! They're behind us!",
+			"careful! They've gotten behind us!"
+			],
+		"z0, zz1":	[
+			"all clear!",
+			"there's nobody here.",
+			"they're gone.",
+			"not an Agathian in sight!",
+			"I see no blue! They've run red!",
+			"there's nobody here.",
+			"gone, they're all gone!",
+			"empty, they deserted",
+			"they're all gone!",
+			"there's no one to fight here!",
+			"the pansies are gone!"
+			],
+		"x1, xx0": 	[
+			"aye!",
+			"yes!",
+			"yeah!",
+			"alright!",
+			"yes sir!"
+			],
+		"x2, xx9": 	[
+			"no!",
+			"no way!",
+			"I can't!",
+			"never!",
+			"you gotta' be kiddin' me!"
+			],
+		"x3, xx8":	[
+			"help!",
+			"help me!",
+			"help me, help me!",
+			"help, help me!",
+			"hey, help me!"
+			],
+		"x4, xx7":	[
+			"no worrys! I'm with you!",
+			"I got yur back!",
+			"you and me!",
+			"alright, I got yur back!",
+			"relax, I'm with you!",
+			"I got'cha!",
+			"let's go! I got'chur back!",
+			"let's go! I got you!"
+			],
+		"x5, xx6, thank":	[
+			"thanks!",
+			"thank you!",
+			"thanks for your help!",
+			"thanks for your aid!",
+			"thanks for the aid!",
+			"thanks, thank you!"
+			],
+		"x6, xx5":	[
+			"you're welcome!",
+			"it was nothing!",
+			"I got this!",
+			"I got you."
+			],
+		"x7, xx4":	[
+			"hohoho! Sorry!",
+			"hoho! Sorry!",
+			"whoops!",
+			"hoho, how did that happen?",
+			"sorry!",
+			"whoa!",
+			"oh my!",
+			"what the!?",
+			"haha! sorry!",
+			"hah! That one's on me!",
+			"oh I'm so sorry!"
+			],
+		"x8, xx3, taunt":	[
+			"I'll split you open like a ripe melon!",
+			"come're you! I like you!",
+			"over here squire! I need help with my codpiece!",
+			"is that chainmail or are you wearing a dress?",
+			"you're like a wench, whos natural gifts were poor!",
+			"come you tedious fool, to the purpose!",
+			"each one of you is worse than the other!",
+			"you aren't fit to govern! Let alone live!"
+			],
+		"x9, xx2, laugh":	[
+			"HAhahaHAha",
+			"hmHAHAHAhaha",
+			"hohoHOHAhahaha",
+			"nehaha",
+			"nehaha, yes!",
+			"yes! hahaha!"
+			],
+		"x0, xx1, respect":	[
+			"finally a fair fight!",
+			"you have fought well!",
+			"ah! One who has matched my skill!",
+			"you've fought well, but for the wrong side!",
+			"you are stronger than I thought!",
+			"you are more than meets the eye!",
+			"I met my match!",
+			"you nearly had me!"
+			]
+	}
+
+
+
+
+}

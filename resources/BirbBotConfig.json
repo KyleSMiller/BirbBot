@@ -24,7 +24,12 @@
 
 		"Agatha Archer" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaArcher.json",		
 		"Agatha MAA" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaMAA.json",
-		"Agatha Knight" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaKnight.json"
+		"Agatha Knight" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaKnight.json",
+		"Agatha Vanguard" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaVanguard.json",
+		"Mason Archer" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\MasonArcher.json",
+		"Mason MAA" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\MasonMAA.json",
+		"Mason Vanguard" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\MasonVanguard.json",
+		"Mason Knight" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\MasonKnight.json"
 
 	}
 

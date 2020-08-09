@@ -1,0 +1,214 @@
+{
+	"Character Names": ["masonknight"],
+	
+	"InputOutput": {
+		"z1, zz0":	[
+			"now, come with me, churl.",
+			"you! You're with me!",
+			"follow me!",
+			"this way, now!",
+			"this way!",
+			"this way! Now!",
+			"stay with me!"
+			],
+		"z2, zz9":	[
+			"forward!",
+			"fooorwaaaaard!",
+			"keep going!",
+			"persue them!",
+			"after them!",
+			"head on!",
+			"keep moving, lapdogs!",
+			"keep running, fools!",
+			"forward!"
+			],
+		"z3, zz8":	[
+			"every man for himself!",
+			"fall back!",
+			"retreaaat!",
+			"we crumble!"
+			],
+		"z4, zz7, killthearchers":	[
+			"hit those archers, now!",
+			"hit those archers!",
+			"kill those archers where they stand!",
+			"take out the archers, now!",
+			"kill those archers!",
+			"slaughter the archers from their petty perches!"
+			],
+		"z5, zz6":	[
+			"kill the peasants! Kill them all!",
+			"put those peasants outta their misery!",
+			"slaughter the peasants and burn the village!",
+			"don't let them stop the ram!",
+			"put your back into it! Get that ram moving!",
+			"defend me! I'm pushing the ram!",
+			"smash their gate with the ram!",
+			"victory is close! Storm the castle and butcher their king!",
+			"get to the throne room and kill the king!",
+			"cut down this false king and end this war!",
+			"a hundred gold pieces for the man who brings me Feydrid's head!",
+
+			"keep the Agathian dogs away from the wagon!",
+			"get the corpse wagon into the valley!",
+			"keep the wagon moving!",
+			"push the corpse wagon into the valley!",
+			"we got plans for Agatha! Push the corpse wagon!",
+			"poison their waters! Get the diseased corpses to the cistern!",
+			"get this cart to the cistern! Poison them all!",
+			"desecrate their cistern with the diseased bodies!",
+			"dump the putrid bodies in their water supply!",
+			"dump the bodies in their drinking water!",
+			"we need a man on each crank, now!",
+			"man both cranks! Spill the diseased water into their river!",
+			"release the fouled waters! Release the seluce gate!",
+			"they thought they could hide in the mountains! Slaughter the royal family of fools!",
+			"bring Argon's queen to me! Kill the rest!",
+			"the royal family is hiding here! Kill them all!",
+			"get inside their fortress and slaughter the claimants to the throne!",
+			
+			"they'll use our ballista against us! Defend the ballista!",
+			"the Agathian scourge ends at our walls!",
+			"keep the Agathians off the wall!",
+			"they're stealing our slaves!",
+			"don't let them free our slaves!",
+			"stop them from breaking the slaves chains!",
+			"push them back! Don't let them reach the king!",
+			"the Agathians have found us! Defend the citadel!",
+			"defend the King!",
+			"hold the throne room! They're trying to kill our king!",
+			"rally to Malric! Rally to the king!",
+			"Malric must not fall!",
+
+			"they've landed on our shores! Push them back!",
+			"don't let them signal their ships! Defend the pire!",
+			"stop them from lighting the signal fire!",
+			"we need our trebuchets to take out their ships! Defend them with your lives!",
+			"defend the trebuchets with your lives!",
+			"they're coming for our ballista! Defend them!",
+			"don't let them use our ballista!",
+			"our ships must win the sea battle! Hold the ballistas!",
+			
+			"defend our food supplies!",
+			"don't let them get the torches!",
+			"protect the farm! They mean to destroy it!",
+			"don't let the powder cart reach the gate!",
+			"stop the cart!",
+			"kill them! they're pushing the cart!",
+			"if that cart gets to the gate, we're finished! Stop them!",
+
+			"bring back the blue and white banner of cowardace!",
+			"bring back the stinking blue banner!",
+			"capture the false claimant's banner!",
+			"show them who owns these lands!",
+			"get our banner back!",
+			"they've stolen our banner! Retrieve it!",
+			"the cowards have taken our banner!",
+			"the peevish Agathians don't deserve to carry our banner! Kill them and take it back!"
+			],
+		"z6, zz5":	[
+			"the order holds this line.",
+			"the order holds this spot!",
+			"hold this position!",
+			"hold this spot!",
+			"hold this spot for the order!",
+			"hold here.",
+			"none shall pass..."
+			],
+		"z7, zz4":	[
+			"get them off of me!",
+			"don't let them get to me!",
+			"get them offa me!",
+			"watch my back, you louts!",
+			"watch my back!"
+			],
+		"z8, zz3":	[
+			"finally! The fight comes to us!",
+			"here come the heroes! Ooooh...",
+			"the heroes have returned... and they look angry.",
+			"here are the heroes! They look angry.",
+			"incoming!",
+			"incoooommiiinnggg!",
+			"they're coming right for us!"
+			],
+		"z9, zz2":	[
+			"they got behind you!",
+			"they're behind you!",
+			"they're behind you, you fool!",
+			"they got behind us!"
+			],
+		"z0, zz1":	[
+			"they're all gone!",
+			"they've turned tail and run!",
+			"they're gone.",
+			"all clear."
+			],
+		"x1, xx0": 	[
+			"aye!",
+			"aye.",
+			"yes!",
+			"yes..."
+			],
+		"x2, xx9": 	[
+			"absolutely not!",
+			"nay!",
+			"nay.",
+			"no!"
+			],
+		"x3, xx8":	[
+			"help!",
+			"help! help me!",
+			"help me!",
+			"save me!"
+			],
+		"x4, xx7":	[
+			"go on, I've got you.",
+			"I'll cover you!",
+			"strength is in numbers! Stick together!",
+			"stick together!"
+			],
+		"x5, xx6, thank":	[
+			"now I'm in your debt.",
+			"I owe you.",
+			"I owe you one.",
+			"your mead is on me!",
+			"your mead is on me."
+			],
+		"x6, xx5":	[
+			"the pleasure is all mine.",
+			"you owe me."
+			],
+		"x7, xx4":	[
+			"it's not my fault.",
+			"I am so sorry.",
+			"these things, they happen!",
+			"two for flinching!",
+			"two for flinchin'.",
+			"walk it off."
+			],
+		"x8, xx3, taunt":
+			[
+			"what a comedy is your defiance!",
+			"art thou my eunich? I shall make it so.",
+			"they flock together in conscent, like so many wild geese.",
+			"your malformed skull is unfit for my piss pot!",
+			"your wife provided fitter sport!",
+			"go off! I discard you! Let me enjoy my private."
+			],
+		"x9, xx2, laugh":	[
+			"HA! hahahahahahahaa!",
+			"mwahahahhahahahaha!",
+			"mmhheehehahahahha!"
+			],
+		"x0, xx1, respect":	[
+			"ha! I'm almost trying!",
+			"not bad for a squire.",
+			"you should join The Order.",
+			"I nearly broke a sweat!",
+			"you have strength, you should join The Order."
+			]
+	}
+
+
+
+}
