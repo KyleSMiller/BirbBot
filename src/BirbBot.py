@@ -139,7 +139,7 @@ async def on_message(message):
             except KeyError:  # if message contains text between {braces} that causes errors with .format()
                 await message.channel.send(msg)
 
-    if message.content in birbBot.getHiddenCommands().getCommands():
+    if any(message.content.lower() in i for i in birbBot.getHiddenCommands().getCommands()):
         msg = birbBot.getHiddenCommands().getResponse(message.content)
         try:
             await message.channel.send(msg.format(message))
