@@ -219,5 +219,33 @@ class MordhauServerInfo(ServerInfo):
         return formattedInfo
 
 
+class DeadliestWarriorServerInfo(ServerInfo):
+    def __init__(self, dataDict):
+        super(DeadliestWarriorServerInfo, self).__init__(dataDict)
 
-serverInfoTypes = [ChivalryServerInfo, MordhauServerInfo]
+    @staticmethod
+    def getGameName():
+        """
+        :return: String  The name of the game this ServerInfo class is designed for
+        """
+        return "Chivalry: Deadliest Warrior"
+
+    def __str__(self):
+        return self.__formatInfo()
+
+    def __formatInfo(self):
+        """
+        Format all the retrieved server info into a response for BirbBot
+        :return String     the formatted server info response that BirbBot will present
+        """
+        if self.getStatus() == "Offline":
+            return "**" + str(self.getName()) + "** appears to be offline!"
+        formattedInfo = ("**" + str(self.getName()) + "** is playing **"
+                         + str(self.getMap()) + "** with a population of **"
+                         + "(" + str(self.getPopulation()) + ")**")
+        formattedInfo += "\n" + str(self.getPlayerList())
+        return formattedInfo
+
+
+
+serverInfoTypes = [ChivalryServerInfo, MordhauServerInfo, DeadliestWarriorServerInfo]
