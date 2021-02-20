@@ -116,10 +116,15 @@ class VoiceCommandReader:
             # check if command is targeting the person who sent the command
             # when a user is @ mentioned, BirbBot reads it in the form: <@!333333333333333333>
             # Grab the numbers in the middle
-            if re.search("(\d{17})\d*", self.__target).group() == str(self.__authorID):
+            possibleID = re.search("(\d{17})\d*", self.__target)
+            if possibleID == None:
+                possibleID = ""
+            else:
+                possibleID = possibleID.group()
+
+            if possibleID == str(self.__authorID):
                 self.__target = "<<self>>"
 
-            print(self.__target)
 
     def __isSpecialResponseName(self, name):
         """
