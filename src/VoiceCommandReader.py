@@ -1,5 +1,6 @@
 import random
 import json
+import re
 from StringTuple import StringTuple
 from Voice import Voice
 
@@ -114,9 +115,11 @@ class VoiceCommandReader:
 
             # check if command is targeting the person who sent the command
             # when a user is @ mentioned, BirbBot reads it in the form: <@!333333333333333333>
-            # Chop off the <@! and > and compare the IDs
-            if self.__target[3:-1] == str(self.__authorID):
+            # Grab the numbers in the middle
+            if re.search("(\d{17})\d*", self.__target).group() == str(self.__authorID):
                 self.__target = "<<self>>"
+
+            print(self.__target)
 
     def __isSpecialResponseName(self, name):
         """
@@ -124,8 +127,14 @@ class VoiceCommandReader:
         :param name:  the name to check
         :return:  boolean
         """
+        possibleID = re.search("(\d{17})\d*", name.lower())
+        if possibleID == None:
+            possibleID = "//////////"
+        else:
+            possibleID = possibleID.group()
+
         for names in self.__specialResponses.keys():
-            if name.lower() in names:
+            if name.lower() in names or possibleID in names:  # check for user ids
                 return True
         return False
 
@@ -136,6 +145,12 @@ class VoiceCommandReader:
         :param command:  the command the name was intended for
         :return:         the special response line
         """
+        possibleID = re.search("(\d{17})\d*", name.lower())
+        if possibleID == None:
+            possibleID = "//////////"
+        else:
+            possibleID = possibleID.group()
+
         for names in self.__specialResponses.keys():
-            if name.lower() in names:
+            if name.lower() in names or possibleID in names:
                 return random.choice(self.__specialResponses[names][command])

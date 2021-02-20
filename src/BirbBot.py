@@ -75,13 +75,13 @@ class BirbBot(discord.Client):
 
     def isVoiceCommand(self, cmd):
         for voice in self.__voiceCommands.getVoices():
-            if voice.getVoiceLines().isValidInput(cmd):
+            if voice.getVoiceLines().isValidInput(cmd.lower()):
                 return True
         return False
 
     def isServerCommand(self, cmd):
         for command in self.__serverCommands.getCommands():
-            if cmd == command:
+            if cmd.lower() == command:
                 return True
         return False
 
