@@ -6,14 +6,15 @@ import discord
 import logging
 
 import json
+import os
 
 from InputOutput import InputOutput
 from VoiceCommandReader import VoiceCommandReader
 from ServerInfoCommandReader import ServerInfoCommandReader
 from GamerTracker import GamerTracker
 
-
-birbBotConfig = "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\BirbBotConfig.json"
+dirname = os.path.dirname(__file__)
+birbBotConfig = os.path.join(dirname, "../resources/BirbBotConfig.json") # "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\BirbBotConfig.json"
 
 logging.basicConfig(level=logging.INFO)
 
@@ -23,7 +24,7 @@ class BirbBot(discord.Client):
         with open(configFilePath) as configFile:
             data = json.load(configFile)
             # TODO: make this a relative path
-            tokenText = open("C:\\users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\botToken.txt")
+            tokenText = open(os.path.join(dirname, "../resources/botToken.txt"))
             self.__token = tokenText.readline()
             self.__commandSymbol = data["Command Symbol"]
             self.__admins = data["Admins"]

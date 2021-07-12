@@ -7,12 +7,12 @@
 
 	"IO Paths": {
 
-		"Admin Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\AdminCommands.json",	
-		"Public Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\PublicCommands.json",
-		"Hidden Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\HiddenCommands.json",
-		"DM Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\DMOutputCommands.json",
-		"Voice Commands" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\VoiceCommands.json",
-		"Special Responses" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\InputOutput\\SpecialResponses.json",
+		"Admin Commands" : "../resources/InputOutput/AdminCommands.json",	
+		"Public Commands" : "../resources/InputOutput/PublicCommands.json",
+		"Hidden Commands" : "../resources/InputOutput/HiddenCommands.json",
+		"DM Commands" : "../resources/InputOutput/DMOutputCommands.json",
+		"Voice Commands" : "../resources/InputOutput/VoiceCommands.json",
+		"Special Responses" : "../resources/InputOutput/SpecialResponses.json",
 		"Server Constructors" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\SteamServerQuerier\\src\\ServerConstructorInfo.json",
 		"Server Data" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\SteamServerQuerier\\src\\ServerQueryData.json"
 
@@ -20,21 +20,21 @@
 
 	"Voice Line Paths": {
 
-		"Agatha Archer" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaArcher.json",		
-		"Agatha MAA" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaMAA.json",
-		"Agatha Knight" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaKnight.json",
-		"Agatha Vanguard" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\AgathaVanguard.json",
-		"Mason Archer" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\MasonArcher.json",
-		"Mason MAA" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\MasonMAA.json",
-		"Mason Vanguard" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\MasonVanguard.json",
-		"Mason Knight" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\MasonKnight.json"
+		"Agatha Archer" : "../resources/VoiceLines/AgathaArcher.json",		
+		"Agatha MAA" : "../resources/VoiceLines/AgathaMAA.json",
+		"Agatha Knight" : "../resources/VoiceLines/AgathaKnight.json",
+		"Agatha Vanguard" : "../resources/VoiceLines/AgathaVanguard.json",
+		"Mason Archer" : "../resources/VoiceLines/MasonArcher.json",
+		"Mason MAA" : "../resources/VoiceLines/MasonMAA.json",
+		"Mason Vanguard" : "../resources/VoiceLines/MasonVanguard.json",
+		"Mason Knight" : "../resources/VoiceLines/MasonKnight.json"
 
 	},
 	
 	"Misc Paths": {
 		
-		"Known Channels" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\channels.json",		
-		"Gamers": "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\gamers.json"
+		"Known Channels" : "../resources/channels.json",		
+		"Gamers": "../resources/gamers.json"
 	
 	}
 
