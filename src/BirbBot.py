@@ -10,6 +10,7 @@ import json
 from InputOutput import InputOutput
 from VoiceCommandReader import VoiceCommandReader
 from ServerInfoCommandReader import ServerInfoCommandReader
+from GamerTracker import GamerTracker
 
 
 birbBotConfig = "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\BirbBotConfig.json"
@@ -28,7 +29,7 @@ class BirbBot(discord.Client):
             self.__admins = data["Admins"]
             self.__botDescription = data["Bot Description"]
 
-            self.__knownChannels = data["Known Channels"]
+            self.__knownChannels = data["Misc Paths"]["Known Channels"]
 
             self.__adminCommands = data["IO Paths"]["Admin Commands"]
             self.__dmCommands = InputOutput(data["IO Paths"]["DM Commands"])
@@ -40,6 +41,7 @@ class BirbBot(discord.Client):
             self.__voiceCommands = VoiceCommandReader(data["Voice Line Paths"],
                                                       data["IO Paths"]["Special Responses"],
                                                       data["IO Paths"]["Voice Commands"])
+            self.__gamerTracker = GamerTracker(data["Misc Paths"]["Gamers"])
 
 
     def getToken(self):
@@ -68,6 +70,9 @@ class BirbBot(discord.Client):
 
     def getVoiceCommands(self):
         return self.__voiceCommands
+
+    def getGamerTracker(self):
+        return self.__gamerTracker
 
 
     def parseVoiceCommand(self, message, command):
@@ -138,8 +143,12 @@ async def on_message(message):
             except KeyError:  # if message contains text between {braces} that causes errors with .format()
                 await message.channel.send(msg)
 
+    if message.content.lower() == "gaming":
+        # none shall be forgiven
+        birbBot.getGamerTracker().addGamer(message.author.id)
+
     if any(message.content.lower() in i for i in birbBot.getHiddenCommands().getCommands()):
-        msg = birbBot.getHiddenCommands().getResponse(message.content)
+        msg = birbBot.getHiddenCommands().getResponse(message.content.lower())
         try:
             await message.channel.send(msg.format(message))
         except KeyError:  # if message contains text between {braces} that causes errors with .format()
@@ -156,24 +165,31 @@ async def on_message(message):
     # admin commands
     if str(message.author.id) in birbBot.getAdmins():
 
+        cmd = message.content.lower()
+
         # reload all BirbBot commands
-        if message.content == birbBot.getCommandSymbol() + "reload":
+        if cmd == birbBot.getCommandSymbol() + "reload":
             birbBot = BirbBot(birbBotConfig)
 
+        elif cmd == birbBot.getCommandSymbol() + "punish":
+            gamers = birbBot.getGamerTracker().punish()
+            for gamer in gamers:
+                await message.channel.send(gamer)
+
         # send messages through BirbBot
-        if message.content.startswith(birbBot.getCommandSymbol() + "say"):
-            targetChannelName = message.content.split(" ")[1]
+        if cmd.startswith(birbBot.getCommandSymbol() + "say"):
+            targetChannelName = cmd.split(" ")[1]
             with open(birbBot.getKnownChannels()) as channels:
                 data = json.load(channels)
                 for chnl in data.keys():
                     if targetChannelName == chnl:
-                        msgList = message.content.split(" ")[2:]  # chop off the invocation and channel parts of the command
+                        msgList = msg.split(" ")[2:]  # chop off the invocation and channel parts of the command
                         msg = " ".join(msgList)
                         targetChannel = birbBot.get_channel(int(data[targetChannelName]))
                         await targetChannel.send(msg)
 
         # shutdown BirbBot remotely
-        if message.content == birbBot.getCommandSymbol() + "shutdown":
+        if cmd == birbBot.getCommandSymbol() + "shutdown":
             await message.author.send("shutting down")
             exit(9473)
 
@@ -184,5 +200,8 @@ async def on_ready():
     print(birbBot.user.name)
     print(birbBot.user.id)
     print('------')
+
+    # # set a custom status
+    # await  birbBot.change_presence(activity=discord.Activity(type=discord.ActivityType.custom, name="This machine kills gamers"))
 
 birbBot.run(birbBot.getToken())

@@ -4,8 +4,6 @@
 	"Command Symbol" : "!",
 	"Admins" : ["296335824427941888", "94252825093099520", "316232394804035584"],
 	"Bot Description" : "I am bot for the Moorland Skirmishers discord server. I can recite voice lines, gather data on your favorite server, and I love you very much *uwu*",
-	
-	"Known Channels" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\channels.json",
 
 	"IO Paths": {
 
@@ -31,6 +29,13 @@
 		"Mason Vanguard" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\MasonVanguard.json",
 		"Mason Knight" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\VoiceLines\\MasonKnight.json"
 
+	},
+	
+	"Misc Paths": {
+		
+		"Known Channels" : "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\channels.json",		
+		"Gamers": "C:\\Users\\raysp\\Desktop\\Python\\Personal\\BirbBot2\\resources\\gamers.json"
+	
 	}
 
 }
